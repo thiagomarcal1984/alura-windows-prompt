@@ -326,3 +326,17 @@
         O atributo /e serve para criar subdiretórios vazios também.
         O atributo /y força a substituição de arquivos copiados.
     
+
+    O comando echo %date% (no Windows Prompt, não no Power Shell) exibe a data
+    atual. 
+
+    Escrever assim:
+        echo echo ^%^date^%^ ^%^time^%^ > data.bat
+        Saída no arquivo: echo %date% %time% 
+
+    É diferente de escrever assim:
+        echo echo %date% %time% > data.bat
+        Saída no arquivo: echo 28/05/2022 19:22:57,25 
+
+    O uso dos circunflexos repetidos (carets) escapa os caracteres que seriam
+    interpretados como comandos no prompt.

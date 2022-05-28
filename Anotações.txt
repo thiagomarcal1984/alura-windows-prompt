@@ -220,3 +220,54 @@
 
         D:\>
         
+
+    Pesquisando texto em arquivos com o comando findstr:
+    http://steve-jansen.github.io/guides/windows-batch-scripting/index.html
+    https://cursos.alura.com.br/forum/topico-e-se-eu-quiser-apagar-uma-informacao-de-dentro-do-arquivo-27703
+
+    O comando findstr com o parâmetro /v exclui as linhas que contenham a
+    string pesquisada.
+
+        D:\alura\windows-prompt>mkdir Filtro
+
+        D:\alura\windows-prompt>cd Filtro
+
+        D:\alura\windows-prompt\Filtro>echo Teste >> arquivo.txt
+
+        D:\alura\windows-prompt\Filtro>echo Ronaldo >> arquivo.txt
+
+        D:\alura\windows-prompt\Filtro>echo Teste >> arquivo.txt
+
+        D:\alura\windows-prompt\Filtro>echo Zina >> arquivo.txt
+
+        D:\alura\windows-prompt\Filtro>echo Teste >> arquivo.txt
+
+        D:\alura\windows-prompt\Filtro>type arquivo.txt
+        Teste
+        Ronaldo
+        Teste
+        Zina
+        Teste
+
+        D:\alura\windows-prompt\Filtro>findstr /v Teste arquivo.txt > filtrado.txt
+
+        D:\alura\windows-prompt\Filtro>type filtrado.txt
+        Ronaldo
+        Zina
+
+        D:\alura\windows-prompt>rmdir /s/q Filtro
+
+        D:\alura\windows-prompt>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\windows-prompt
+
+        28/05/2022  13:03    <DIR>          .
+        28/05/2022  13:03    <DIR>          ..
+        28/05/2022  13:02             8.833 Anotações.txt
+        28/05/2022  11:59    <DIR>          Dicas
+        28/05/2022  12:05                18 original.txt
+                    2 arquivo(s)          8.851 bytes
+                    3 pasta(s)   131.805.360.128 bytes disponíveis
+

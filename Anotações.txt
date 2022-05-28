@@ -340,3 +340,15 @@
 
     O uso dos circunflexos repetidos (carets) escapa os caracteres que seriam
     interpretados como comandos no prompt.
+
+
+    O comando @echo off faz com que os comandos que estão nos scripts não 
+    apareçam durante sua execução, mostrando apenas seus resultados.
+
+    É útil quando queremos deixar a execução dos scripts mais limpas, ou 
+    quando temos alguma informação sensível no script que não desejamos 
+    que usuário veja.
+
+    Não é necessário iniciar o script com "echo off" e finalizar com "echo on".
+    Iniciando o script com "@echo off" desliga o echo só enquanto o script é
+    executado.

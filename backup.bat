@@ -1,4 +1,4 @@
-echo off
+@echo off
 
 cls 
 echo Deseja fazer backup?
@@ -16,5 +16,3 @@ echo Listando arquivos do backup...
 dir
 
 cd ..
-
-echo on

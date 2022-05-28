@@ -1,0 +1,186 @@
+1. Primeiros comandos
+
+    echo: comando de impressão.
+        C:\Users\Thiago>echo Olá mundo!
+        Olá mundo!
+
+
+    dir: comando para listar o conteúdo da pasta.
+        D:\alura\javaservlet-fundamentos>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\javaservlet-fundamentos
+
+        22/05/2022  20:16    <DIR>          .
+        22/05/2022  20:16    <DIR>          ..
+        20/05/2022  16:38               922 .gitignore
+        20/05/2022  14:20    <DIR>          .metadata
+        22/05/2022  09:49               227 .project
+        22/05/2022  21:30            15.801 Anotações.txt
+        20/05/2022  21:56    <DIR>          gerenciador
+        20/05/2022  21:36    <DIR>          Servers
+        20/05/2022  13:50    <DIR>          Slides
+                    3 arquivo(s)         16.950 bytes
+                    6 pasta(s)   131.805.396.992 bytes disponíveis
+
+
+    cd: comando para mudar de diretório (change directory).
+        D:\alura\javaservlet-fundamentos>cd gerenciador
+
+        D:\alura\javaservlet-fundamentos\gerenciador>
+
+        D:\alura\javaservlet-fundamentos\gerenciador>cd ..
+
+        D:\alura\javaservlet-fundamentos>
+
+
+    mkdir: comando para criar um diretório (make directory).
+        D:\alura\windows-prompt> mkdir Dicas
+        D:\alura\windows-prompt>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\windows-prompt
+
+        28/05/2022  11:43    <DIR>          .
+        28/05/2022  11:43    <DIR>          ..
+        28/05/2022  11:41             1.160 Anotações.txt
+        28/05/2022  11:43    <DIR>          Dicas
+                    1 arquivo(s)          1.160 bytes
+                    3 pasta(s)   131.805.392.896 bytes disponíveis
+
+
+    Criando um novo arquivo vazio:
+        "The > symbol creates a new file if not present, or overwrites the file
+        if it already exists. The >> also creates a new file if not present, 
+        but it appends the text to the end of the file if it already exists, 
+        rather than overwriting the file."
+
+        D:\alura\windows-prompt>echo >> dica.txt
+
+        D:\alura\windows-prompt>echo >> dica2.txt
+
+        D:\alura\windows-prompt>echo >> dica3.txt
+        
+        D:\alura\windows-prompt>echo Teste >> dica4.txt
+
+    
+    move: comando para mover um arquivo ou diretório.
+        D:\alura\windows-prompt>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\windows-prompt
+
+        28/05/2022  11:46    <DIR>          .
+        28/05/2022  11:46    <DIR>          ..
+        28/05/2022  11:45             1.783 Anotações.txt
+        28/05/2022  11:46                20 dica.txt
+        28/05/2022  11:46                20 dica2.txt
+        28/05/2022  11:46                20 dica3.txt
+        28/05/2022  11:46                 4 dica4.txt
+        28/05/2022  11:43    <DIR>          Dicas
+                       4 arquivo(s)             68 bytes
+                       3 pasta(s)   131.805.392.896 bytes disponíveis
+
+        D:\alura\windows-prompt>move dica.txt Dicas
+                1 arquivo(s) movido(s).
+
+        D:\alura\windows-prompt>move dica2.txt Dicas
+                1 arquivo(s) movido(s).
+
+        D:\alura\windows-prompt>move dica3.txt Dicas
+                1 arquivo(s) movido(s).
+
+        D:\alura\windows-prompt>move dica4.txt Dicas
+                1 arquivo(s) movido(s).
+
+        D:\alura\windows-prompt>cd Dicas
+
+        D:\alura\windows-prompt\Dicas>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\windows-prompt\Dicas
+
+        28/05/2022  11:53    <DIR>          .
+        28/05/2022  11:53    <DIR>          ..
+        28/05/2022  11:46                20 dica.txt
+        28/05/2022  11:46                20 dica2.txt
+        28/05/2022  11:46                20 dica3.txt
+        28/05/2022  11:46                 8 dica4.txt
+                       4 arquivo(s)             68 bytes
+                       2 pasta(s)   131.805.388.800 bytes disponíveis
+
+
+    type: comando para escrever o conteúdo de um arquivo (idem cat do Linux).
+        D:\alura\windows-prompt\Dicas>echo
+        ECHO está ativado.
+
+        D:\alura\windows-prompt\Dicas>type dica.txt
+        ECHO está ativado.
+
+
+    copy: comando para copiar arquivos.
+        D:\alura\windows-prompt>echo Teste de Cópia. > original.txt
+
+        D:\alura\windows-prompt>copy original.txt copia.txt
+                1 arquivo(s) copiado(s).
+
+        D:\alura\windows-prompt>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\windows-prompt
+
+        28/05/2022  12:05    <DIR>          .
+        28/05/2022  12:05    <DIR>          ..
+        28/05/2022  12:04             4.546 Anotações.txt
+        28/05/2022  12:05                18 copia.txt
+        28/05/2022  11:59    <DIR>          Dicas
+        28/05/2022  12:05                18 original.txt
+                    3 arquivo(s)          4.582 bytes
+                    3 pasta(s)   131.805.388.800 bytes disponíveis
+            
+
+    rename: comando para renomear arquivos.
+        D:\alura\windows-prompt>rename copia.txt copia_do_original.txt
+
+        D:\alura\windows-prompt>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\windows-prompt
+
+        28/05/2022  12:08    <DIR>          .
+        28/05/2022  12:08    <DIR>          ..
+        28/05/2022  12:04             4.546 Anotações.txt
+        28/05/2022  12:05                18 copia_do_original.txt
+        28/05/2022  11:59    <DIR>          Dicas
+        28/05/2022  12:05                18 original.txt
+                    3 arquivo(s)          4.582 bytes
+                    3 pasta(s)   131.805.388.800 bytes disponíveis
+
+
+    del: deleta arquivo.
+        D:\alura\windows-prompt>del copia_do_original.txt
+
+        D:\alura\windows-prompt>dir
+         O volume na unidade D é Dados
+         O Número de Série do Volume é 82DF-C6AA
+ 
+         Pasta de D:\alura\windows-prompt
+
+        28/05/2022  12:10    <DIR>          .
+        28/05/2022  12:10    <DIR>          ..
+        28/05/2022  12:04             4.546 Anotações.txt
+        28/05/2022  11:59    <DIR>          Dicas
+        28/05/2022  12:05                18 original.txt
+                    2 arquivo(s)          4.564 bytes
+                    3 pasta(s)   131.805.388.800 bytes disponíveis
+
+
+    cls: limpa a tela (clear screen).
+
+

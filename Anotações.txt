@@ -190,3 +190,33 @@
         D:\>cd alura/windows-prompt
 
         D:\alura\windows-prompt>
+
+
+    Para obter ajudar, escreva help antes do comando.
+        D:\>help help
+        Fornece informações de ajuda sobre comandos do Windows.
+
+        HELP [comando]
+
+            comando - exibe informações de ajuda sobre o comando.
+
+        D:\>help echo
+        Exibe mensagens ou ativa ou desativa o eco de comando.
+
+          ECHO [ON | OFF]
+          ECHO [message]
+  
+        Digite ECHO sem parâmetros para exibir a configuração do eco atual.
+
+        D:\>echo off
+        echo
+        ECHO está desativado.
+        echo Olá.
+        Olá.
+        echo on
+
+        D:\>echo
+        ECHO está ativado.
+
+        D:\>
+        

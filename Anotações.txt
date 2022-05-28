@@ -271,3 +271,31 @@
                     2 arquivo(s)          8.851 bytes
                     3 pasta(s)   131.805.360.128 bytes disponíveis
 
+
+    tree: comando para exibir a estrutura de pastas de uma unidade ou caminho.
+        D:\alura\windows-prompt>help tree
+        Exibe de forma gráfica a estrutura de pastas de uma unidade ou caminho.
+
+        TREE [unidade:][caminho] [/F] [/A]
+
+            /F Exibir os nomes dos arquivos de cada pasta.
+            /A Usar ASCII em vez de caracteres estendidos.
+
+        D:\alura\windows-prompt>tree
+        Listagem de caminhos de pasta para o volume Dados
+        O número de série do volume é 82DF-C6AA
+        D:.
+        └───Dicas
+
+        D:\alura\windows-prompt>tree /f
+        Listagem de caminhos de pasta para o volume Dados
+        O número de série do volume é 82DF-C6AA
+        D:.
+        │   Anotações.txt
+        │   original.txt
+        │
+        └───Dicas
+                dica.txt
+                dica2.txt
+                dica3.txt
+                dica4.txt

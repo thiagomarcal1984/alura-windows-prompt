@@ -299,3 +299,30 @@
                 dica2.txt
                 dica3.txt
                 dica4.txt
+
+
+2. Um novo prompt e executando scripts
+
+    Recomendação do professor: baixar o cmder em http://www.cmder.net .
+
+    O cmder permite:
+        * uso do comando colar com Control + V;
+        * a criação de mais um prompt com Control + T;
+        * alternância de abas de prompt com Control + Tab;
+        * desfazer ações com Control + Z.
+
+    Arquivos de extensão .bat guardam comandos de prompt do Windows para 
+    automação de tarefas.
+
+    Exemplo de criação de um arquivo .bat para limpar a tela:
+        D:\alura\windows-prompt> echo cls > limpatela.bat
+        
+        D:\alura\windows-prompt>limpatela
+
+    O arquivo backup.bat que criamos automatiza a criação de uma pasta de
+    backup na pasta atual. Ele copia o conteúdo de Dicas para a pasta backup.
+
+    O backup.bat contém o comando xcopy, que possui mais opções que o copy.
+        O atributo /e serve para criar subdiretórios vazios também.
+        O atributo /y força a substituição de arquivos copiados.
+    

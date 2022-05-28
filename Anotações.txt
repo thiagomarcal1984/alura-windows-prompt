@@ -184,3 +184,9 @@
     cls: limpa a tela (clear screen).
 
 
+    Ao mudar de diretório, não há diferença em usar a barra ou a contrabarra!
+        D:\alura\windows-prompt>cd /
+
+        D:\>cd alura/windows-prompt
+
+        D:\alura\windows-prompt>

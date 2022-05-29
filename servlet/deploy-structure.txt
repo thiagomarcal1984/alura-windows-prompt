@@ -1,0 +1,20 @@
+D:\teste\servlet>tree %catalina_home%\webapps\projeto /f
+Listagem de caminhos de pasta para o volume Dados
+O número de série do volume é 00000030 82DF:C6AA
+D:\APACHE-TOMCAT-9.0.63-REPLICA\WEBAPPS\PROJETO
+│   cadastro.html
+│   list.html
+│
+├───META-INF
+│       MANIFEST.MF
+│       war-tracker
+│
+└───WEB-INF
+    └───classes
+        └───br
+            └───com
+                └───teste
+                    └───servlets
+                            CadastroServlet.class
+                            HomeServlet.class
+                            ListaServlet.class

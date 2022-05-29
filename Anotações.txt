@@ -402,3 +402,12 @@
 
     Agora pra deletar as variáveis de ambiente em definitivo, só com a janela
     de variáveis de ambiente do Windows. -_-
+
+
+    O rapidEE além de nos permitir visualizar nossas variáveis de ambiente, 
+    também é muito útil para debugar problemas na variável PATH , removendo 
+    suas entradas duplicadas com o Cleanup Path e marcando em vermelho as 
+    entradas inválidas que por acaso podem ter sido adicionadas lá sem querer.
+
+    Disponível em: http://www.rapidee.com/ 
+    

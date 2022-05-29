@@ -439,3 +439,54 @@
     Para desinstalar pacotes, use um dos comandos:
         choco uninstall nodejs -y
         cuninst nodejs
+
+
+5. Comandos do Linux bash no Windows
+    Antes de mais nada, installe o cmder via Chocolatey:
+        cinst cmder -y
+
+    A desvantagem é que, mesmo instalado, o executável do cmder não aparece
+    no menu iniciar. Você precisa executar o comando cmder no prompt.
+
+    Semelhanças nos comandos do Windows Prompt e no Linux Bash:
+        Windows     Linux
+        mkdir       mkdir
+        rmdir       rmdir
+        dir         ls
+        cls         clear
+        copy        cp
+        move        mv
+        del         rm
+        type        cat
+
+    O comando grep serve para filtrar alguma saída. Geralmente é antecedido
+    de um pipe:
+        ls -al | grep backup
+
+        -rw-r--r-- 1 Thiago 197121    54 mai 28 21:17 backup-java-home.txt
+        -rw-r--r-- 1 Thiago 197121  1988 mai 29 10:31 backupPATH.txt
+
+    No Linux, o comando "find ." lista todos os arquivos dentro da pasta atual:
+        λ find ./Dicas/
+        ./Dicas/
+        ./Dicas/dica.txt
+        ./Dicas/dica2.txt
+        ./Dicas/dica3.txt
+        ./Dicas/dica4.txt
+
+        λ find ./src/ | grep .java
+        ./src/br/com/teste/models/Dados.java
+        ./src/br/com/teste/models/Modelo.java
+        ./src/br/com/teste/Teste.java
+    
+    Procurando arquivos .java no Linux:
+        find src/ | grep .java
+        src/br/com/teste/models/Dados.java
+        src/br/com/teste/models/Modelo.java
+        src/br/com/teste/Teste.java
+
+    Procurando arquivos .java no Windows:
+        dir /s /B | find ".java"
+        D:\alura\windows-prompt\src\br\com\teste\Teste.java
+        D:\alura\windows-prompt\src\br\com\teste\models\Dados.java
+        D:\alura\windows-prompt\src\br\com\teste\models\Modelo.java

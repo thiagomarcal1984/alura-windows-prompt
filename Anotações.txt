@@ -410,4 +410,32 @@
     entradas inválidas que por acaso podem ter sido adicionadas lá sem querer.
 
     Disponível em: http://www.rapidee.com/ 
-    
+
+
+4. Gerenciando pacotes com Chocolatey
+
+    Visite o site http://chocolatey.org/
+    Execute como administrador no PowerShell o comando de instalação proposto.
+
+    Use o Chocolatey no prompt como administrador, para garantir que as 
+    instalações serão executadas sem problemas.
+
+    Você pode pesquisar pacotes no site do Chocolatey:
+     https://community.chocolatey.org/packages
+
+    Exemplo de instalação do Node no chocolatey:
+        choco install nodejs-lts -y
+
+        choco install nodejs -y
+        choco install nodejs -version 4.2.6
+        choco install nodejs -version 4.2.6 -y
+
+        cinst firefox -y
+
+    Para listar os pacotes instalados pelo Chocolatey, use um dos comandos:
+        choco list --local-only
+        clist -l
+
+    Para desinstalar pacotes, use um dos comandos:
+        choco uninstall nodejs -y
+        cuninst nodejs

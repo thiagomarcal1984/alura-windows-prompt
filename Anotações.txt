@@ -352,3 +352,42 @@
     Não é necessário iniciar o script com "echo off" e finalizar com "echo on".
     Iniciando o script com "@echo off" desliga o echo só enquanto o script é
     executado.
+
+3. Variáveis de ambiente e instalação do JDK
+
+    O comando SET mostra todas as variáveis definidas no ambiente do prompt.
+    Para incluir uma variável no Prompt, usamos o comando SET variavel=valor.
+    
+    Para obter valores de variáveis no Prompt, envolvemos o nome da variável 
+    com sinais de percentual.
+
+    No exemplo abaixo, a variável se chama PATH. Para imprimir o conteúdo dela,
+    usamos o comando echo %PATH%.
+
+    Para fazer backup do path, use (no Windows Prompt, não no Power Shell):
+        echo %PATH% > backupPATH.txt
+    
+    É boa prática criar uma pasta bin para o usuário e inseri-la no path.
+        Os arquivos .bat foram movidos para a pasta bin.
+
+    Para incluir a pasta bin do diretório atual, use:
+        set PATH=%PATH%;%cd%\bin
+
+    A definição da variável se limita ao prompt atual. Para resetar a variável,
+    feche e reabra o prompt.
+
+    Mas se você quiser modificar as variáveis de forma permanente, use o 
+    comando SETX com o parâmetro /M em um Windows Prompt no modo administrador.
+    O parâmetro /M faz com que a variável seja definida de forma permanente:
+        setx PATH "%PATH%;%cd%\bin" /M
+        SETX JAVA_HOME "C:\Program Files\Common Files\Oracle\Java\javapath\" /M
+        SETX JAVA_HOME "C:\Program Files\Java\jdk1.8.0_71" /M
+
+    O WINDOWS LIMITA O TAMANHO DOS DADOS PARA 1024 CARACTERES AO USAR O SETX.
+    
+    USE O SETX EXCLUSIVAMENTE NO PROMPT DE COMANDO DO WINDOWS! USÁ-LO NO CMDER
+    PODE AFETAR NEGATIVAMENTE O SISTEMA OPERACIONAL!
+
+    A variável de ambiente PROCESSOR_ARCHITECTURE é útil para saber qual a 
+    arquitetura do processador e personalizar o download de arquivos (por 
+    exemplo, o Java Development Kit).

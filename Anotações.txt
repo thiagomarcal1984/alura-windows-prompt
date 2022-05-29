@@ -391,3 +391,14 @@
     A variável de ambiente PROCESSOR_ARCHITECTURE é útil para saber qual a 
     arquitetura do processador e personalizar o download de arquivos (por 
     exemplo, o Java Development Kit).
+
+
+    O comando setx deve ser usado sempre no prompt de comando original do 
+    Windows, e sempre em modo de administrador.
+
+    O setx não possui o sinal de igual, e o conteúdo da variável deve ficar 
+    entre aspas. Não podemos esquecer também da importante flag /M, que indica
+    que estamos criando uma variável do sistema.
+
+    Agora pra deletar as variáveis de ambiente em definitivo, só com a janela
+    de variáveis de ambiente do Windows. -_-
